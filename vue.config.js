@@ -1,6 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  server: {
-    host: true, // or '0.0.0.0'
+module.exports = {
+  devServer: {
+    allowedHosts: ['.ondigitalocean.app'], // or your exact domain
   },
-})
+};
